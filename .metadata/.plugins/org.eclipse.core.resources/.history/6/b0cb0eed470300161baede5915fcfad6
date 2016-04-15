@@ -1,0 +1,39 @@
+package pages;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage extends PageBase {
+
+	@FindBy(id="intercept-close")
+	private WebElement closeModalButton;
+	
+	@FindBy(id="desktop-search-input")
+	private WebElement searchField;
+	
+	@FindBy(id="desktop-search-icon")
+	private WebElement searchIcon;
+
+	@FindBys(css="h2")
+	private WebElement carouselName;
+
+	public HomePage(WebDriver driver){
+		super(driver);
+		PageFactory.initElements(driver, this);
+		Assert.assertTrue(getTitle().toString().contains("Moviefone.com"));
+	}
+	
+	public void closeInterceptModal(){
+		if(closeModalButton.isDisplayed()){
+			closeModalButton.click();
+		}
+	}
+
+	public void enterSearchTerm(String term){
+		searchField.clear();
+		searchField.sendKeys(term);
+	}
+}	

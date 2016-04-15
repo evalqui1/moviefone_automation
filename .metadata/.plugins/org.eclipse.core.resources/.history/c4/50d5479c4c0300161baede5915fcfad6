@@ -1,0 +1,63 @@
+package pages;
+
+import java.util.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage extends PageBase {
+
+	@FindBy(id="intercept-close")
+	private WebElement closeModalButton;
+
+	@FindBy(id="desktop-search-input")
+	private WebElement searchField;
+
+	@FindBy(id="desktop-search-icon")
+	private WebElement searchIcon;
+
+	@FindBys({
+		@FindBy(css="h2")
+	})
+	private List<WebElement> carouselNames;
+	
+	@FindBy(css="a.dl-right-button.dl-control.homepage_dl_right_arrow")
+	private WebElement rightToggleArrow;
+
+	public HomePage(WebDriver driver){
+		super(driver);
+		PageFactory.initElements(driver, this);
+		Assert.assertTrue(getTitle().toString().contains("Moviefone.com"));
+	}
+
+	public void closeInterceptModal(){
+		if(closeModalButton.isDisplayed()){
+			closeModalButton.click();
+		}
+	}
+
+	public void enterSearchTerm(String term){
+		searchField.clear();
+		searchField.sendKeys(term);
+	}
+	
+	public void clickSearchIcon(){
+		searchIcon.click();
+	}
+	
+	public void selectCarousel(String carouselName){
+		for(WebElement names:carouselNames){
+			if(names.getText().contains(carouselName)){
+				names.click();
+			}
+		}
+	}
+	
+	public void clickRightArrow(){
+		rightToggleArrow.click();
+	}
+}	

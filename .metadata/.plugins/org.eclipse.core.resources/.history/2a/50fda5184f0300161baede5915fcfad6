@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Moviefone" verbose="1">
+	<test name="Regression">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="MovieFone.HomeTest">
+				<methods>
+					<include name="" />
+				</methods>
+			</class>
+			<class name="MovieFone.SearchTest">
+				<methods>
+					<include name="" />
+				</methods>
+			</class>
+			<class name="MovieFone.HomeNewsTest">
+				<methods>
+					<include name="" />
+				</methods>
+			</class>
+			<class name="HomeNewsletterSignUp">
+			<methods>
+			<include name="" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

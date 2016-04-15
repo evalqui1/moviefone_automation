@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Moviefone" duration-ms="62689" started-at="2016-04-15T21:25:37Z" finished-at="2016-04-15T21:26:40Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="62689" started-at="2016-04-15T21:25:37Z" finished-at="2016-04-15T21:26:40Z">
+      <class name="MovieFone.HomeNewsletterSignUp">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.HomeNewsletterSignUp@3969454d]" name="setUp" is-config="true" duration-ms="4989" started-at="2016-04-15T17:26:26Z" finished-at="2016-04-15T17:26:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:MovieFone.HomeNewsletterSignUp@3969454d]" name="Search" duration-ms="2508" started-at="2016-04-15T17:26:31Z" finished-at="2016-04-15T17:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MovieFone.HomeNewsletterSignUp@3969454d]" name="tearDown" is-config="true" duration-ms="9" started-at="2016-04-15T17:26:34Z" finished-at="2016-04-15T17:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.HomeNewsletterSignUp -->
+      <class name="MovieFone.HomeNewsTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.HomeNewsTest@2e44dfad]" name="setUp" is-config="true" duration-ms="5506" started-at="2016-04-15T17:26:20Z" finished-at="2016-04-15T17:26:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:MovieFone.HomeNewsTest@2e44dfad]" name="Search" duration-ms="799" started-at="2016-04-15T17:26:25Z" finished-at="2016-04-15T17:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MovieFone.HomeNewsTest@2e44dfad]" name="tearDown" is-config="true" duration-ms="9" started-at="2016-04-15T17:26:26Z" finished-at="2016-04-15T17:26:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.HomeNewsTest -->
+      <class name="MovieFone.SearchTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.SearchTest@30e4f894]" name="setUp" is-config="true" duration-ms="5417" started-at="2016-04-15T17:26:01Z" finished-at="2016-04-15T17:26:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:MovieFone.SearchTest@30e4f894]" name="Search" duration-ms="12937" started-at="2016-04-15T17:26:07Z" finished-at="2016-04-15T17:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MovieFone.SearchTest@30e4f894]" name="tearDown" is-config="true" duration-ms="100" started-at="2016-04-15T17:26:20Z" finished-at="2016-04-15T17:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.SearchTest -->
+      <class name="MovieFone.HomeTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.HomeTest@7a37d046]" name="setUp" is-config="true" duration-ms="6253" started-at="2016-04-15T17:25:37Z" finished-at="2016-04-15T17:25:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:MovieFone.HomeTest@7a37d046]" name="Search" duration-ms="17499" started-at="2016-04-15T17:25:44Z" finished-at="2016-04-15T17:26:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MovieFone.HomeTest@7a37d046]" name="tearDown" is-config="true" duration-ms="9" started-at="2016-04-15T17:26:01Z" finished-at="2016-04-15T17:26:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.HomeTest -->
+      <class name="MovieFone.HomePageClickMenuItem">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.HomePageClickMenuItem@2bb8ee96]" name="setUp" is-config="true" duration-ms="5326" started-at="2016-04-15T17:26:34Z" finished-at="2016-04-15T17:26:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:MovieFone.HomePageClickMenuItem@2bb8ee96]" name="Search" duration-ms="785" started-at="2016-04-15T17:26:39Z" finished-at="2016-04-15T17:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MovieFone.HomePageClickMenuItem@2bb8ee96]" name="tearDown" is-config="true" duration-ms="528" started-at="2016-04-15T17:26:40Z" finished-at="2016-04-15T17:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.HomePageClickMenuItem -->
+    </test> <!-- Regression -->
+  </suite> <!-- Moviefone -->
+</testng-results>

@@ -1,0 +1,47 @@
+package MovieFone;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestCaseBase {
+
+    protected WebDriver driver;
+
+    protected String browser;
+
+    protected String environment;
+    //
+    //      protected String siteUrl;
+
+    @BeforeClass
+    @Parameters({"browser", "environment"})
+    public void setUp(String browser, String environment) throws Exception{
+            if(browser.equalsIgnoreCase("firefox")){
+                    driver = new FirefoxDriver();
+            }else if(browser.equalsIgnoreCase("chrome")){
+                    driver = new ChromeDriver();
+                    //              }else if(browser.equalsIgnoreCase("safari")){
+                    //                      System.setProperty("webdriver.safari.nosinstall", "true");
+                    //                      driver = new SafariDriver();
+            }else{
+                    throw new Exception("No Browser Selected");
+            }
+
+            if(environment.equalsIgnoreCase("prod")){
+                    driver.get("http://www.tvguide.com");
+            }else if(environment.equalsIgnoreCase("qa")){
+                    driver.get("http:web.qa.tvguide.com");
+            }else{
+                    throw new Exception("No Env. Selected");
+            }
+
+
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+
+    @AfterClass
+    public void tearDown(){
+            driver.close();
+    }
+}
+

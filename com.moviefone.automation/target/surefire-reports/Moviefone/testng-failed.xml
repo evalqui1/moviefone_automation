@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Moviefone]">
+  <parameter name="browser" value="firefox"/>
+  <test name="Regression(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MovieFone.HomeNewsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MovieFone.HomeNewsTest -->
+      <class name="MovieFone.HomeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- MovieFone.HomeTest -->
+      <class name="MovieFone.SearchTest">
+        <methods>
+          <include name="Search"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MovieFone.SearchTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Moviefone] -->

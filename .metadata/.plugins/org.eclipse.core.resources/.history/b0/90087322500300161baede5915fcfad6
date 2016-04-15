@@ -1,0 +1,96 @@
+package pages;
+
+import java.util.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage extends PageBase {
+
+	@FindBy(id="intercept-close")
+	private WebElement closeModalButton;
+
+	@FindBy(id="desktop-search-input")
+	private WebElement searchField;
+
+	@FindBy(id="desktop-search-icon")
+	private WebElement searchIcon;
+
+	@FindBys({
+		@FindBy(css="h2")
+	})
+	private List<WebElement> carouselNames;
+
+	@FindBy(css="a.dl-right-button.dl-control.homepage_dl_right_arrow")
+	private WebElement rightToggleArrow;
+	
+	@FindBy(css="#news-grid > div > button")
+	private WebElement moreNewsButton;
+	
+	@FindBy(css="input[type='text']")
+	private WebElement newsLetterField;
+	
+	@FindBy(className="blue button")
+	private WebElement goButton;
+	
+	@FindBys({
+		@FindBy(css="#header > div.desktop.header > div > ul > li")
+	})
+	private WebElement menuItems;
+	
+	public HomePage(WebDriver driver){
+		super(driver);
+		PageFactory.initElements(driver, this);
+		Assert.assertTrue(getTitle().toString().contains("Moviefone.com"));
+	}
+
+	public void closeInterceptModal(){
+		if(closeModalButton.isDisplayed()){
+			closeModalButton.click();
+		}
+	}
+
+	public void enterSearchTerm(String term){
+		searchField.clear();
+		searchField.sendKeys(term);
+	}
+
+	public void clickSearchIcon(){
+		searchIcon.click();
+	}
+
+	public void selectCarousel(String carouselName){
+		for(WebElement names:carouselNames){
+			if(names.getText().contains(carouselName)){
+				names.click();
+			}
+		}
+	}
+	
+	public void clickMenuItem(String menuSelection){
+		for(WebElement menus:menuItems){
+			if(menus.getText().contains(menuSelection)){
+				menus.click(); 
+			}
+		}
+	}
+
+	public void clickRightArrow(){
+		for(int i = 0; i < 7; i++)
+			rightToggleArrow.click();
+	}
+	
+	public void clickMoreNewsButton(){
+		moreNewsButton.click();
+	}
+	
+	public void enterEmail(String email){
+		newsLetterField.clear();
+		newsLetterField.sendKeys(email);
+//		goButton.click();
+	}
+}

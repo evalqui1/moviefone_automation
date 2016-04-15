@@ -1,0 +1,9 @@
+package pages;
+
+public class HomePage extends PageBase {
+	
+	public HomePage(WebDriver driver){
+		
+	}
+
+}

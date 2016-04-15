@@ -1,0 +1,26 @@
+package pages;
+
+import junit.framework.Assert;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ObjectPage extends PageBase{
+	
+	@FindBy(css="p.show-title > strong")
+	private WebElement showTitle;
+	
+	
+	public ObjectPage(WebDriver driver){
+		super(driver);
+		PageFactory.initElements(driver, this);
+		Assert.assertTrue(getTitle().contains("Brooklyn Nine Nine"));
+	}
+
+	public void verifyShow(String showName){
+		
+	}
+	
+}

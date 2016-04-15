@@ -1,0 +1,5 @@
+package MovieFone;
+
+public class HomeTest extends TestCaseBase{
+
+}

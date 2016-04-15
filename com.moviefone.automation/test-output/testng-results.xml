@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="43" started-at="2016-04-15T20:42:04Z" finished-at="2016-04-15T20:42:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="43" started-at="2016-04-15T20:42:04Z" finished-at="2016-04-15T20:42:04Z">
+      <class name="MovieFone.SearchTest">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.SearchTest@548c791e]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in /private/var/folders/gf/6xzygl9j78b_nf63x2fxl3_r0000gn/T/testng-eclipse--282275463/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in /private/var/folders/gf/6xzygl9j78b_nf63x2fxl3_r0000gn/T/testng-eclipse--282275463/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="Search()[pri:0, instance:MovieFone.SearchTest@548c791e]" name="Search" duration-ms="8" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:MovieFone.SearchTest@548c791e]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.SearchTest -->
+      <class name="MovieFone.HomeTest">
+        <test-method status="SKIP" signature="setUp(java.lang.String)[pri:0, instance:MovieFone.HomeTest@3b1a82fd]" name="setUp" is-config="true" duration-ms="0" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="Search()[pri:0, instance:MovieFone.HomeTest@3b1a82fd]" name="Search" duration-ms="2" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:MovieFone.HomeTest@3b1a82fd]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-04-15T16:42:04Z" finished-at="2016-04-15T16:42:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MovieFone.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

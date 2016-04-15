@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Moviefone]">
+  <parameter name="siteUrl" value="site"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="Regression(failed)">
+    <parameter name="siteUrl" value="site"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MovieFone.HomeTest">
+        <methods>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- MovieFone.HomeTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Moviefone] -->

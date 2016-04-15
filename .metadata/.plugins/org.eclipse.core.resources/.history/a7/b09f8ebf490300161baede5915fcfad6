@@ -1,0 +1,26 @@
+package MovieFone;
+
+import org.testng.annotations.Test;
+
+import pages.HomePage;
+import pages.ObjectPage;
+import pages.SearchResultsPage;
+
+public class SearchTest extends TestCaseBase{
+
+	HomePage home;
+	SearchResultsPage search;
+	ObjectPage object;
+
+	@Test
+	public void Search(){
+		home = new HomePage(driver);
+		home.closeInterceptModal();
+		home.enterSearchTerm("Brooklyn Nine Nine");
+		search.getTitle();
+		search.resultsShowHeader("Brooklyn Nine Nine");
+		search.clickShowLink("Brooklyn Nine Nine");
+		object.getTitle();
+		object.verifyShow("Brooklyn Nine Nine");
+	}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TVGuide" verbose="1">
+	<test name="Regression">
+		<parameter name="browser" value="firefox" />
+		<parameter name="environment" value="prod" />
+		<classes>
+		<!-- <class name="TVGuide.RegisterUser">
+				<methods> <include name=""/> </methods>
+			</class>
+			<class name="TVGuide.WatchlistTest">
+			</class>
+			<class name="TVGuide.HomePageTest">
+				<methods>
+					<include name="" />
+				</methods>
+			</class> -->
+			<class name="TVGuide.ListingsTest">
+				<methods>
+					<include name="clickChangeLink" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

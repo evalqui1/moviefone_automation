@@ -1,0 +1,13 @@
+package MovieFone;
+
+import org.testng.annotations.Test;
+
+import pages.HomePage;
+
+public class HomeTest extends TestCaseBase{
+	
+	HomePage home;
+	
+	@Test
+
+}
